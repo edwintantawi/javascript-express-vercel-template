@@ -1,7 +1,5 @@
-const { SERVER_CONFIG } = require('../config');
-
 const routes = (app) => {
-  const { API_ROUTE } = SERVER_CONFIG;
+  const API_ROUTE = '/api';
 
   app.use('/', require('./mainRoutes'));
   // API
